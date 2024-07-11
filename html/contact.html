@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Artisan Expert</title>
+    <meta name="description" content="Contactez Artisan Expert pour discuter de vos projets de rénovation ou obtenir plus d'informations sur nos services artisanaux.">
+    <meta name="keywords" content="artisan, contact, projets, rénovation">
+    <meta name="author" content="Artisan Expert Exemple">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Artisan Expert</h1>
+            <button class="open-btn" onclick="toggleNav()">&#9776; Menu</button>
+        </header>
+        <nav id="sideNav" class="sidenav">
+            <a href="javascript:void(0)" class="close-btn" onclick="toggleNav()">&times;</a>
+            <a href="../index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projets</a>
+            <a href="team.html">Équipe</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="content">
+            <section id="contact">
+                <h2>Contactez-nous</h2>
+                <p>Pour toute question ou pour discuter de vos projets, veuillez remplir le formulaire ci-dessous. Nous vous répondrons dans les plus brefs délais.</p>
+                <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                    
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; Web Swift Design | Tous droits réservés.</p>
+            <p>Ce site est un exemple, l'entreprise est fictive.</p>
+        </footer>
+    </div>
+</body>
+</html>
